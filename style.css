@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+@keyframes buttonAnimation {
+  from { color: white;}
+  to { color: rgb(2, 138, 155)}
+}
+
+@keyframes logoAnimation {
+  from {}
+  to {}
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(img/Background.jpg) no-repeat;
+  background-color: #333;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "Muli", sans-serif;
+
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto 150px auto;
+  font-size: 20px;
+  /* border-bottom: solid 2px #333; */
+  filter: blur(.5px);
+  margin: 50px 0 0 0;
+  padding: 10px 0 25px 0;
+  width: 100%;
+}
+
+.link {
+  margin: auto 30px auto 30px;
+  text-decoration: none;
+}
+
+.link:link {
+  color: aliceblue;
+
+}
+
+.link:visited {
+  color: aliceblue;
+}
+
+.link:hover{
+  color: rgb(9, 228, 199);
+  text-shadow: 25px 10px 5px rgb(2, 138, 115);
+  animation-name: buttonAnimation;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 9999;
+  animation-direction: alternate;
+}
+
+
+.logo {
+  padding: 300px 0 50px 0;
+  width: 100%;
+}
+
+.socialLogo {
+  width: 20px;
+  height: 20px;
+}
+
+.youtubeLinks {
+  padding: 0 0 100px 0;
+  border-bottom: solid 2px grey;
+}
+
+.logo:hover {
+  animation: vibrate 0.5s;
+
+  animation-iteration-count: infinite;
+}
+
+footer {
+  color:#333;
+  text-decoration: none;
+}
+
+#linkedin:link {
+  color: rgb(78, 78, 78);
+  text-decoration: none;
+}
+
+#linkedin:visited {
+  color: rgb(133, 130, 130)
+}
